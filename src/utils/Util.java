@@ -22,4 +22,15 @@ public class Util {
     public List<Vessel> getVesselList() {
         return vesselList;
     }
+    public Vessel getVesselById(String vesselId) {
+
+        for (Vessel vessel : vesselList) {
+            if (vessel.getVesselId().equals(vesselId)) {
+                return vessel;   // Vessel found
+            }
+        }
+
+        return null;  // Vessel not found
+    }
+
 }

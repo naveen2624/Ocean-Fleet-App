@@ -21,5 +21,13 @@ public class Main {
                             v.getAverageSpeed()
             );
         }
+
+        Vessel result = util.getVesselById("V201");
+
+        if (result != null) {
+            System.out.println("Vessel Found: " + result.getVesselName());
+        } else {
+            System.out.println("Vessel not found");
+        }
     }
 }
