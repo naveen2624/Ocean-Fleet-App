@@ -1,3 +1,5 @@
+package model;
+
 public class Vessel {
 
     // Instance variables (attributes)
@@ -51,4 +53,5 @@ public class Vessel {
     public void setVesselType(String vesselType) {
         this.vesselType = vesselType;
     }
+
 }
